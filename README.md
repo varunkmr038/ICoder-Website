@@ -1,5 +1,5 @@
 # ICoder       <img align="center" width="50" height="50" src="img/icon.jpg">
-### A Simple static website developed using bootstrap framework
+### A simple static website developed using bootstrap framework
 ## Tech Stack used: 
 - HTML
 - CSS
