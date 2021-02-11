@@ -1,0 +1,23 @@
+.img{
+    height: 60vh;
+    background-size: cover;
+}
+
+a.nav-link{
+   font-size: larger;
+   margin: auto 20px; 
+}
+.navbar-brand{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#searchbtn{
+    height: 50%;
+    margin-top: 15px;
+}
+
+#signupbtn{
+margin-right: 50px !important;
+margin-left: 40px !important;
+}

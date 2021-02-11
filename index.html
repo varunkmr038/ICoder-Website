@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.jpg" type="image/x-icon">
+    <title>ICoder | Heaven for Programmers</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-xl  navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+
+            <a class="navbar-brand mt-1" href="/">
+                <img src="img/icon.jpg" alt="" height="50" width="50" class="mx-3">
+                ICoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://www.newscientist.com/subject/technology/"
+                                    target="__blank">Technology</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://blog.openclassrooms.com/en/2018/03/28/web-development-definition/"
+                                    target="__blank">Web Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Write for us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger mx-3" id="signupbtn" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Sign Up</button>
+
+                </div>
+                <form class="d-flex">
+                    <input class="form-control me-2 my-3" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light mx-1 " type="submit" id="searchbtn">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to ICoder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- modal body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-warning">Login</button>
+                        <a href="#" class="mx-5">Forgot password?</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an ICoder account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- modal body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-warning">Sign Up</button>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- middle corousal -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/home/1.jpg" class="d-block w-100 img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to ICoder</h5>
+                    <p>Technology News, Development and Trends</p>
+                    <button class="btn btn-primary">Technology</button>
+                    <button class="btn btn-danger mx-3">Web Development</button>
+                    <button class="btn btn-success">Tech Fun</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/home/2.jpg" class="d-block w-100 img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to ICoder</h5>
+                    <p>Technology News, Development and Trends</p>
+                    <button class="btn btn-primary">Technology</button>
+                    <button class="btn btn-danger mx-3">Web Development</button>
+                    <button class="btn btn-success">Tech Fun</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/home/3.jpg" class="d-block w-100 img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to ICoder</h5>
+                    <p>Technology News, Development and Trends</p>
+                    <button class="btn btn-primary">Technology</button>
+                    <button class="btn btn-danger mx-3">Web Development</button>
+                    <button class="btn btn-success">Tech Fun</button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+    <!-- thumbnails -->
+    <div class="container my-5">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0">Global Conferences</h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="card-text mb-auto">With over USD 5 billion worth of climate action projects around the
+                            world, the Green Climate Fund (GCF) is playing a major role in helping developing countries
+                            raise and realise their climate ambitions.</p>
+                        <a href="https://www.greenclimate.fund/event/global-programming-conference-2019"
+                            class="stretched-link" target="__blank">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+
+                        <img class="bd-placeholder-img" width="250" height="300" src="img/home/thumb1.jpg" alt="Error">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Design</strong>
+                        <h3 class="mb-0">Learn Web Designing</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">A web designer works on the appearance, layout, and, in some cases, content
+                            of a website. Appearance, for instance, relates to the colors, font, and images used.</p>
+                        <a href="https://www.interaction-design.org/literature/topics/web-design" class="stretched-link"
+                            target="__blank">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+
+                        <img class="bd-placeholder-img" width="250" height="250" src="img/home/thumb2.jpg" alt="Error">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- footer -->
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2020-2021 ICoder Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
